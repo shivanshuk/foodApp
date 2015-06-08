@@ -1,0 +1,72 @@
+@IMPORT url("../fonts/glyphicons-halflings-regular.svg");
+#logo-home.favicon {
+	height: 140px;
+	width: 305px;
+	background: url("../images/logo-kitchen-food.jpg");
+}
+
+#sign-up {
+	background-color: #ab967d;
+	display: inline-block;
+	border-radius: 2px;
+	padding: 0 10px;
+}
+
+.home-grid {
+	float: left;
+}
+
+.promo-bundle-frame {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 50%;
+	margin-top: 100px;
+}
+.promo-bundle-frame img.promo-image{
+	background: url("../images/main-page.jpg");
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 50%;
+	/* width: 1024px; height : 500px; */
+	
+	/* height: 500px; */
+	
+}
+
+.promo-bundle-copy-frame {
+	padding: 20px 2.5%;
+	text-align: left;
+}
+
+.promo-bundle-copy-frame>h5 {
+	font-weight: 400;
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+.promo-bundle-copy-frame>p.subhead {
+	display: block;
+}
+
+.promo-bundle-copy-frame>p.shorthead {
+	display: block;
+	font-weight: normal;
+}
+.promo-bundle-block {
+  width: 25%;
+}
+.promo-bundle-block {
+  width: 50%;
+  padding: 4px 2px 0;
+}
+.promo-bundle-block {
+  float: left;
+  width: 100%;
+  padding-top: 2px;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
