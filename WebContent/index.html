@@ -5,12 +5,15 @@
 <title>Kitchen Food Delivery</title>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<!--Include JQuery UI File-->
+<script type="text/javascript" language="Javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+<script src="js/login.js"></script>
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 <body>
-
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -51,7 +54,7 @@
 					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" id="opener">LOGIN</a></li>
 					<li><a href="#"><span id="sign-up" class="btn-primary">SIGN
 								UP </span></a></li>
 				</ul>
@@ -62,47 +65,27 @@
 	</nav>
 
 
-	<!-- Main div starts here.. -->
-	<div class="home-grid">
-		<div class="promo-bundle-frame">
-			<img alt="And the bread you need to make" class="promo-image">
-			<div class="promo-bundle-copy-frame">
-				<h5>Why You Need to Save Your Whey</h5>
-				<p class="subhead">And the bread you knead to make</p>
-				<p class="shorthead">Ricotta Whey and Barley Bread</p>
-			</div>
-		</div>
-	</div>
 	
-	<div class="promo-bundle-secondary-group">
-  <a href="/blog/13152-the-best-kind-of-peanut-butter-jelly?src=promo_bundle" class="promo-bundle-block -full-width -first track-ga-click-event" data-ga-action="click slot 2" data-ga-category="promo bundle" data-ga-label="locale: home">
-    <div class="promo-bundle-frame">
-        <img alt="This streusel-topped muffin is the stuff of your dreams." src="images/muffin1.jpg">
-      <div class="promo-bundle-copy-frame">
-          <p>PB&amp;J, in muffin form. </p>
-      </div>
-    </div>
-</a>  <a href="/shop/collections/sea-escape?src=promo_bundle" class="promo-bundle-block -full-width track-ga-click-event" data-ga-action="click slot 3" data-ga-category="promo bundle" data-ga-label="locale: home">
-    <div class="promo-bundle-frame">
-        <img alt="" src="images/berries3.jpg">
-      <div class="promo-bundle-copy-frame">
-          <p>Treats for your beach bag.</p>
-      </div>
-    </div>
-</a>  <a href="blog/6970?src=promo_bundle" class="promo-bundle-block -full-width track-ga-click-event" data-ga-action="click slot 4" data-ga-category="promo bundle" data-ga-label="locale: home">
-    <div class="promo-bundle-frame">
-        <img alt="Tips and tricks " src="images/beachBag2.jpg">
-      <div class="promo-bundle-copy-frame">
-          <p>Berries for days. </p>
-      </div>
-    </div>
-</a>  <a href=" /shop/products/2279-child's-spa-bathrobe?src=promo_bundle" class="promo-bundle-block -full-width track-ga-click-event" data-ga-action="click slot 5" data-ga-category="promo bundle" data-ga-label="locale: home">
-    <div class="promo-bundle-frame">
-        <img alt="" src="images/spaChild4.jpg">
-      <div class="promo-bundle-copy-frame">
-          <p>For your spa child.</p>
-      </div>
-    </div>
-</a>    </div>
+
+	<script type="text/javascript">
+	
+	$(document).ready(function () {
+    $('#dialog').dialog({ autoOpen: false });
+
+    $('#opener').click(
+        function () {
+            $('#dialog').dialog('open');
+            return false;
+        }
+    );
+}); 
+        </script>
+	<div id="dialog" title="My Dialog Title">
+		<p>This is My Dialog box Description/Content</p>
+		<p>This is the default dialog which is useful for displaying
+			information. The dialog window can be moved, resized and closed with
+			the 'x' icon.</p>
+	</div>
+
 </body>
 </html>
