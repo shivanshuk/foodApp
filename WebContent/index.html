@@ -34,7 +34,7 @@
 								class="icon-bar"></span> <span class="icon-bar"></span> <span
 								class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#"><img id="logo-home"
+						<a class="navbar-brand" href="#"><img id=".logo-home"
 							class="favicon" /></a>
 					</div>
 
@@ -75,49 +75,10 @@
 				<!-- /.container-fluid -->
 			</nav>
 
-
-
-
-			<script type="text/javascript">
-				/* $(document).ready(function() {
-					$('#dialog').dialog({
-						autoOpen : false
-					});
-
-					$('#opener').click(function() {
-						$('#dialog').dialog('open');
-						$(document.body).attr('class', 'blur');
-						return false;
-					});
-				}); */
-				
-				$(function() {
-					
-					$('#opener').click(function() {
-						$('#dialog').dialog('open');
-						$('#overlay').removeClass('blur-out'); 
-						 $('#overlay').addClass('blur-in');
-						 
-						//  $('.pop-up').hide();
-						  $('.pop-up').fadeIn(1000);   
-						   $('pop-up').attr('display','block');
-						return false;
-					});
-					
-					   $('.logmod__close').click(function (e) { 
-
-					  $('.pop-up').fadeOut(700);
-					  $('#overlay').removeClass('blur-in');
-					  $('#overlay').addClass('blur-out');
-					  e.stopPropagation();
-					    
-					  }); 
-					});
-			</script>
 		</div>
 	</div>
 
-	<div class="pop-up logmod" style="display:none;">
+	<div class="pop-up logmod" style="display: none;">
 		<div class="logmod__wrapper">
 			<span class="logmod__close">X</span>
 			<div class="logmod__container">
@@ -240,8 +201,120 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+			
+			</script>
 
+	<div class="jumbotron jumbotron_index kf-jumbotron">
+		<div class="row">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li class="" data-target="#myCarousel" data-slide-to="1"></li>
+					<li class="" data-target="#myCarousel" data-slide-to="2"></li>
+					<li class="" data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<img style="width: 1280px; height: 600px;" src="images/slide1.jpg"
+							alt="Slide 1" class="sliding-images">
+						<div class="carousel-caption" align="center">
+							<span class="bottomDialog">Delicious home food just few
+								clicks away!</span>
+						</div>
+					</div>
+					<div class="item" id="slide2">
+						<img style="width: 1280px; height: 600px;" src="images/slide2.jpg"
+							alt="Slide 2" class="sliding-images">
+						<div class="carousel-caption" align="center">
+							<span class="bottomDialog">Delicious home food just few
+								clicks away!</span>
+						</div>
+					</div>
+					<div class="item" id="slide3">
+						<img style="width: 1280px; height: 600px;" src="images/slide3.jpg"
+							alt="Slide 2" class="sliding-images">
+						<div class="carousel-caption" align="center">
+							<span class="bottomDialog">Delicious home food just few
+								clicks away!</span>
+						</div>
+					</div>
+					<div class="item" id="slide4">
+						<img style="width: 1280px; height: 600px;" src="images/slide4.jpg"
+							alt="Slide 2" class="sliding-images">
+						<div class="carousel-caption" align="center">
+							<span class="bottomDialog">Delicious home food just few
+								clicks away!</span>
+						</div>
+					</div>
+				</div>
+				<a style="display: block;" class="left carousel-control"
+					href="#myCarousel" data-slide="prev"><i
+					class="fa fa-chevron-circle-left" style="font-size: 50px"></i></a><a
+					style="display: block;" class="right carousel-control"
+					href="#myCarousel" data-slide="next"><i
+					class="fa fa-chevron-circle-right" style="font-size: 50px"></i></a>
+			</div>
+		</div>
+		<!-- 		<div id="mobile_default_meals"></div> -->
+	</div>
 
+	
+	<div class="footer" style="position: fixed;">
+		<div class="footerdiv" id="kf_navbar_mobile_footer"
+			style="max-height: 38px; overflow-y: auto;">
+			<h6 style="text-align: center; margin: 6px 0px;"
+				class="kf-footer-copyright">
+				© Copyright 2015 Greater Noida Kitchen <a id="aboutus"
+					href="javascript:void(0)" class="hidden-phone"
+					style="border-left: 2px solid #d4d4d4; margin: 0px 5px; padding: 0px 5px;">
+					<i class="fa fa-users"></i> About Us
+				</a>
+				<script type="text/javascript">
+	jQuery(document).ready(function () { 
+	var options_aboutus = {};
+	options_aboutus.jqueryaction = "anchor";
+	options_aboutus.id = "aboutus";
+	options_aboutus.targets = "parent";
+	options_aboutus.href = "/launch-about-us.action;jsessionid=hsargl91lsvge55icg2y0ye7";
+	options_aboutus.indicatorid = "indicator-startup";
+
+jQuery.struts2_jquery.bind(jQuery('#aboutus'),options_aboutus);
+
+ });  
+</script>
+				<a id="faq" href="javascript:void(0)" class="hidden-phone"
+					style="border-left: 2px solid #d4d4d4; margin: 0px 5px; padding: 0px 5px;">
+					<i class="fa fa-question-circle"></i> FAQ
+				</a>
+				<script type="text/javascript">
+jQuery(document).ready(function () { 
+	var options_faq = {};
+	options_faq.jqueryaction = "anchor";
+	options_faq.id = "faq";
+	options_faq.targets = "parent";
+	options_faq.href = "/launch-faq.action;jsessionid=hsargl91lsvge55icg2y0ye7";
+	options_faq.indicatorid = "indicator-startup";
+
+jQuery.struts2_jquery.bind(jQuery('#faq'),options_faq);
+
+ });  
+</script>
+
+				<a id="facebook" class="hidden-phone"
+					href="http://www.facebook.com/kitchensfood" target="_blank"> <i
+					class="fa fa-facebook-square fa-2x" style="color: #3A569D;"></i> <!-- <img alt="" src="/images/FB.png"  class="social_networks"> -->
+				</a> <a id="gplus" class="hidden-phone"
+					href="https://plus.google.com/117448011869904752792/posts"
+					target="_blank"> <i class="fa fa-google-plus-square fa-2x"
+					style="color: #B63223;"></i> <!-- <img alt="" src="/images/google-plus-icon.png"  class="social_networks"> -->
+				</a> <a id="twitter" class="hidden-phone"
+					href="https://twitter.com/KitchensFood" target="_blank"> <i
+					class="fa fa-twitter-square fa-2x" style="color: #5FA9DC;"></i> <!-- <img alt="" src="/images/twitterbig.png" class="social_networks"> -->
+				</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong
+					class="hidden-phone">Best viewed in Chrome</strong>
+			</h6>
+		</div>
 	</div>
 
 </body>

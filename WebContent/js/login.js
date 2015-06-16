@@ -113,3 +113,27 @@ var LoginModalController = {
 	$(document).ready(function() {
 	    LoginModalController.initialize();
 	});
+	
+	
+	$(function() {
+		
+		$('#opener').click(function() {
+			$('#dialog').dialog('open');
+			$('#overlay').removeClass('blur-out'); 
+			 $('#overlay').addClass('blur-in');
+			 
+			//  $('.pop-up').hide();
+			  $('.pop-up').fadeIn(1000);   
+			   $('pop-up').attr('display','block');
+			return false;
+		});
+		
+		   $('.logmod__close').click(function (e) { 
+
+		  $('.pop-up').fadeOut(700);
+		  $('#overlay').removeClass('blur-in');
+		  $('#overlay').addClass('blur-out');
+		  e.stopPropagation();
+		    
+		  }); 
+		});
