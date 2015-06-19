@@ -792,6 +792,7 @@ html {
     z-index: 5;
     margin: 0px;
     list-style: outside none none;
+    height: 20px;
 }
 .carousel-inner {
     position: relative;
@@ -894,4 +895,36 @@ html {
 
 .dmargin4{
 	margin:40px 0 0 100px
+}
+.call-us{
+	background: url("../images/tel.png");
+	height: 50px;
+	width: 50px;
+}
+/* nav.navbar.navbar-default {
+  background-color: #050505;
+  border-color: #e7e7e7;
+}
+nav.navbar-default div.container-fluid div#bs-example-navbar-collapse-1 ul.nav.navbar-nav>li>a {
+  color: #FFF;
+}
+nav.navbar-default div.container-fluid div#bs-example-navbar-collapse-1 ul.navbar-nav>li>a:hover {
+  color: black;
+}
+nav.navbar-default div.container-fluid div#bs-example-navbar-collapse-1 ul.nav.navbar-nav li.active a{
+	color:black;
+} */
+#kf_navbar_mobile_footer.footerdiv {
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+  box-shadow: 0 1px 5px rgba(0,0,0,.1);
+  border: 1px solid #d4d4d4;
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin-bottom: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
 }
