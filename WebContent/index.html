@@ -9,10 +9,12 @@
 <script type="text/javascript" language="Javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
 <script src="js/login.js"></script>
+<script src="js/menu.js"></script>
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/menu-pop-up.css">
 
 <link rel='stylesheet prefetch'
 	href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
@@ -65,8 +67,9 @@
 							<button type="submit" class="btn btn-default">Submit</button>
 						</form>
 						<ul class="nav navbar-nav navbar-right">
-						<!-- <li><a href="#" id="opener"><span id="call"><img class="call-us"/> +91 9810501456</span></a></li> -->
-							<li><a href="#" id="opener"><span id="sign-up" class="btn-primary">LOGIN</span></a></li>
+							<!-- <li><a href="#" id="opener"><span id="call"><img class="call-us"/> +91 9810501456</span></a></li> -->
+							<li><a href="#" id="opener"><span id="sign-up"
+									class="btn-primary">LOGIN</span></a></li>
 							<!-- <li><a href="#"><span id="sign-up" class="btn-primary">SIGN
 										UP </span></a></li> -->
 						</ul>
@@ -80,21 +83,75 @@
 	</div>
 
 
-<!-- Div for getting the menu -->
-	<div class="menu-pop-up" style="display: none;">
-		<span class="logmod__close">X</span>
-		<div class="logmod__container">
-		<ul class="logmod__tabs">
+	<!-- Div for getting the menu -->
+	<div class="menu-pop-up-main logmod" style="display: none;">
+		<div class="menu-pop-up__wrapper">
+			<span class="menu-pop-up__close">X</span>
+			<div class="menu-pop-up__container">
+				<ul class="menu-pop-up__tabs">
 					<li><a href="#">Menu for 9th June</a></li>
-					</ul>
-		
+				</ul>
+
+			</div>
+
+			<div class="menu-pop-up__tab-wrapper">
+				<div class="menu-pop-up__tab lgm-1">
+					<div class="menu-pop-up__form">
+						<form accept-charset="utf-8" action="#">
+							<!-- Use this to get the Menu from back end -->
+
+							<table class="table table-hover">
+								<tr>
+									<th>Menu Item</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th>Total Price</th>
+								</tr>
+
+								<tr>
+									<td>Kadi</td>
+									<td>60 <i class="fa fa-inr"></i></td>
+									<td id="quant-custom"><input type="text" class="form-control" id="order-quant"/></td>
+									<td>60 <i class="fa fa-inr"></i></td>
+								</tr>
+
+								<tr>
+									<td>Paneer</td>
+									<td>100 <i class="fa fa-inr"></i></td>
+									<td id="quant-custom"><input type="text" class="form-control" id="order-quant"/></td>
+									<td>200 <i class="fa fa-inr"></i></td>
+								</tr>
+								<tr>
+									<td>Egg Curry</td>
+									<td>60 <i class="fa fa-inr"></i></td>
+									<td id="quant-custom"><input type="text" class="form-control" id="order-quant"/></td>
+									<td>60 <i class="fa fa-inr"></i></td>
+								</tr>
+
+
+								<tr>
+									<td></td>
+									<td></td>
+									<td><span style="font-weight: bold;">Total Price :</span></td>
+									<td><span style="font-weight: bold;">320 <i class="fa fa-inr"></i></span></td>
+								</tr>
+
+								<tr>
+									<td><button type="button" class="btn btn-success">Submit</button></td>
+									<td></td>
+									<td></td>
+									<td><button type="button" class="btn btn-danger" id="menu-cancel">Cancel</button></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-	
-	
+
 	</div>
-	
-	
-	
+
+
 	<div class="pop-up logmod" style="display: none;">
 		<div class="logmod__wrapper">
 			<span class="logmod__close">X</span>
@@ -111,7 +168,7 @@
 							</span>
 						</div>
 						<div class="logmod__form">
-							<form accept-charset="utf-8" action="#" class="simform">
+							<form accept-charset="utf-8" action="#">
 								<div class="sminputs">
 									<div class="input full">
 										<label class="string optional" for="user-name">Email*</label>
@@ -219,8 +276,8 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-			
-			</script>
+		
+	</script>
 
 	<div class="jumbotron jumbotron_index kf-jumbotron">
 		<div class="row">
@@ -276,7 +333,7 @@
 		<!-- 		<div id="mobile_default_meals"></div> -->
 	</div>
 
-	
+
 	<div class="footer">
 		<div class="footerdiv" id="kf_navbar_mobile_footer"
 			style="max-height: 38px; overflow-y: auto;">
@@ -286,18 +343,15 @@
 					href="javascript:void(0)" class="hidden-phone"
 					style="border-left: 2px solid #d4d4d4; margin: 0px 5px; padding: 0px 5px;">
 					<i class="fa fa-users"></i> About Us
-				</a>
-				
-				<a id="facebook" class="hidden-phone"
+				</a> <a id="facebook" class="hidden-phone"
 					href="http://www.facebook.com/" target="_blank"> <i
 					class="fa fa-facebook-square fa-2x" style="color: #3A569D;"></i> <!-- <img alt="" src="/images/FB.png"  class="social_networks"> -->
-				</a> <a id="gplus" class="hidden-phone"
-					href="https://plus.google.com/"
+				</a> <a id="gplus" class="hidden-phone" href="https://plus.google.com/"
 					target="_blank"> <i class="fa fa-google-plus-square fa-2x"
 					style="color: #B63223;"></i> <!-- <img alt="" src="/images/google-plus-icon.png"  class="social_networks"> -->
-				</a> <a id="twitter" class="hidden-phone"
-					href="https://twitter.com/" target="_blank"> <i
-					class="fa fa-twitter-square fa-2x" style="color: #5FA9DC;"></i> <!-- <img alt="" src="/images/twitterbig.png" class="social_networks"> -->
+				</a> <a id="twitter" class="hidden-phone" href="https://twitter.com/"
+					target="_blank"> <i class="fa fa-twitter-square fa-2x"
+					style="color: #5FA9DC;"></i> <!-- <img alt="" src="/images/twitterbig.png" class="social_networks"> -->
 				</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong
 					class="hidden-phone">Best viewed in Chrome</strong>
 			</h6>

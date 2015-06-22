@@ -1,4 +1,4 @@
-.menu-pop-up{
+.menu-pop-up-main{
 	
 	/* position: fixed; */
 	/* margin: 5% auto; */
@@ -71,15 +71,16 @@
 .menu-pop-up__tab {
   position: relative;
   width: 100%;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
+ /*  height: 0; */
+ /*  overflow: hidden;
+  opacity: 0; */
+  visibility: visible;
 }
 .menu-pop-up__tab-wrapper {
   width: 100%;
   height: auto;
-  overflow: hidden;
+  /* auto; */
+  /* overflow: hidden; */
 }
 .menu-pop-up__tab.show {
   opacity: 1;
@@ -101,7 +102,7 @@
   color: #333;
 }
 .menu-pop-up__tabs li a {
-  width: 50%;
+  width: 100%;
   position: relative;
   float: left;
   text-align: center;
@@ -145,3 +146,12 @@
 .menu-pop-up__alter .connect:last-child {
   border-radius: 0 0 4px 4px;
 }
+div.col-xs-6.col-md-3 h4{
+	margin-left: 10px;
+}
+td#quant-custom{
+	width: 30%;
+}
+td#quant-custom input#order-quant.form-control{
+	width: 50%;
+	}
