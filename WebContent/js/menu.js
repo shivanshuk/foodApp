@@ -18,6 +18,13 @@ $(function() {
 		return false;
 	});
 	
+	$('#order-quant').focusout(function() {
+		var quant = $("#order-quant").val();
+		alert(quant);
+		var totPrice = quant * parseInt( $('#product-price').text() );
+		$('#tot-price').innerHTML(totPrice);
+	});
+	
 	$('.menu-pop-up__close').click(function(e) {
 
 		$('menu-pop-up-main').fadeOut(700);
@@ -38,3 +45,6 @@ $(function(){
 	});
 	
 });
+
+
+
