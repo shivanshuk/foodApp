@@ -8,6 +8,7 @@ $(function() {
 
 	$('#'+menu_id).click(function() {
 		//alert("sdcaqc");
+		$("#menu-pop-up__wrapper").show();
 		$('#dialog').dialog('open');
 		$('#overlay').removeClass('blur-out');
 		$('#overlay').addClass('blur-in');
@@ -20,9 +21,9 @@ $(function() {
 	
 	$('#order-quant').focusout(function() {
 		var quant = $("#order-quant").val();
-		alert(quant);
+		//alert(quant);
 		var totPrice = quant * parseInt( $('#product-price').text() );
-		$('#tot-price').innerHTML(totPrice);
+		$('#tot-price').html(totPrice);
 	});
 	
 	$('.menu-pop-up__close').click(function(e) {
@@ -32,19 +33,23 @@ $(function() {
 		$('#overlay').addClass('blur-out');
 		$('menu-pop-up-main').attr('display', 'none');
 		e.stopPropagation();
+		$(".menu-pop-up__wrapper").dialog('close');
 
-	});
-});
-
-$(function(){
-	$('#menu-cancel').click(function(e){
-		$('menu-pop-up-main').fadeOut(700);
-		$('#overlay').removeClass('blur-in');
-		$('#overlay').addClass('blur-out');
-		e.stopPropagation();
 	});
 	
+	$(function(){
+		$('.menu-pop-up__close').click(function(e){
+			$('menu-pop-up-main').fadeOut(700);
+			$('#overlay').removeClass('blur-in');
+			$('#overlay').addClass('blur-out');
+			$("#menu-pop-up__wrapper").hide();
+			e.stopPropagation();
+		});
+		
+	});
+
 });
+
 
 
 

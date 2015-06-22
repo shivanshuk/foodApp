@@ -51,7 +51,7 @@
 								data-toggle="dropdown" role="button" aria-expanded="false">WEEK'S
 									MENU <span class="caret"></span>
 							</a>
-								<ul class="dropdown-menu" role="menu">
+								<ul class="dropdown-menu" role="menu" >
 									<li id="day_1"><a href="#" id="test">9th June 2015</a></li>
 									<li id="day_2"><a href="#">10th June 2015</a></li>
 									<li id="day_3"><a href="#">11th June 2015</a></li>
@@ -85,7 +85,7 @@
 
 	<!-- Div for getting the menu -->
 	<div class="menu-pop-up-main logmod" style="display: none;">
-		<div class="menu-pop-up__wrapper">
+		<div class="menu-pop-up__wrapper" id="menu-pop-up__wrapper">
 			<span class="menu-pop-up__close">X</span>
 			<div class="menu-pop-up__container">
 				<ul class="menu-pop-up__tabs">
@@ -118,13 +118,13 @@
 								<tr>
 									<td>Paneer</td>
 									<td>100 <i class="fa fa-inr"></i></td>
-									<td id="quant-custom"><input type="text" class="form-control" /></td>
+									<td id="quant-custom"><input type="text" class="form-control" id="order-quant"/></td>
 									<td>200 <i class="fa fa-inr"></i></td>
 								</tr>
 								<tr>
 									<td>Egg Curry</td>
 									<td>60 <i class="fa fa-inr"></i></td>
-									<td id="quant-custom"><input type="text" class="form-control"/></td>
+									<td id="quant-custom"><input type="text" class="form-control" id="order-quant"/></td>
 									<td>60 <i class="fa fa-inr"></i></td>
 								</tr>
 
